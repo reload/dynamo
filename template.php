@@ -440,20 +440,6 @@ function dynamo_pager($tags = array(), $limit = 10, $element = 0, $parameters = 
 }
 
 
-
-/**
- * Crudely format danMARC2 data.
- *
- * Documentation: http://www.kat-format.dk/danMARC2/Danmarc2.5c.htm#pgfId=1575053
- */
-function format_danmarc2($string){
-	$string = str_replace('Indhold:','',$string);	
-	$string = str_replace(' ; ','<br/>',$string);	
-	$string = str_replace(' / ','<br/>',$string);	 
-
-	return $string;
-}
-
 /**
  * Implementation of theme rss feed icon
  * 
